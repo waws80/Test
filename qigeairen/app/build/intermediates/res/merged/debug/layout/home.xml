@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            style="@style/CustomToolBarTheme"
+            android:elevation="20dp"
+            android:translationZ="10dp">
+
+            <com.qigeairen.user.utils.customview.CirlceView
+                android:id="@+id/navigation"
+                android:onClick="onClick"
+                style="@style/CustomToolBar_left"/>
+
+            <TextView
+                android:id="@+id/home_toolbar_location"
+                style="@style/CustomToolBar_center"
+                android:layout_width="148.55dp"
+                android:layout_height="21.7dp"
+                android:background="@drawable/style_activity_home_title"
+                android:text="@string/home_location_ing"
+                android:textSize="10.87sp"/>
+
+            <ImageView
+                android:id="@+id/home_nv_point"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="40dp"
+                android:src="@mipmap/nv_point"/>
+            <!--<ScrollView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:scrollbars="none"-->
+                <!--android:scrollY="0dp"-->
+                <!--android:scaleX="0"-->
+                <!--android:layout_height="match_parent">-->
+                <!---->
+            <!--</ScrollView>-->
+
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.internal.HomeScrollView
+            android:id="@+id/homeScrollView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="69.6dp"
+            android:scrollbars="none"
+            android:focusable="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.qigeairen.user.utils.customview.FlyBanner
+                    android:id="@+id/homebanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="195.65dp"
+                    android:background="@mipmap/home_test_banner"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35.87dp">
+
+                    <View
+                        android:layout_width="11.96dp"
+                        android:layout_height="11.96dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@mipmap/newactivities"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:text="@string/activity_home_newactivities"
+                        android:textSize="11.96sp"/>
+
+                    <View
+                        android:layout_width="6.52dp"
+                        android:layout_height="12.32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@mipmap/activity_home_activities_jiantou"/>
+
+                </RelativeLayout>
+
+                <com.qigeairen.user.utils.customview.CustomListView
+                    android:id="@+id/home_activities"
+                    android:layout_width="match_parent"
+                    android:divider="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1.09dp"/>
+
+            </LinearLayout>
+
+        </com.handmark.pulltorefresh.library.internal.HomeScrollView>
+    <ImageView
+        android:elevation="20dp"
+        android:id="@+id/home_findwork"
+        android:layout_width="63.04dp"
+        android:onClick="onClick"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/findworkers"
+        android:layout_height="76.8dp"/>
+    <ImageView
+        android:elevation="20dp"
+        android:id="@+id/home_goods"
+        android:layout_width="42dp"
+        android:onClick="onClick"
+        android:layout_toLeftOf="@+id/home_findwork"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/goods"
+        android:layout_height="53.6dp"/>
+
+    <ImageView
+        android:elevation="20dp"
+        android:id="@+id/home_online"
+        android:layout_width="42dp"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/home_findwork"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/online"
+        android:layout_height="53.6dp"/>
+
+</RelativeLayout>

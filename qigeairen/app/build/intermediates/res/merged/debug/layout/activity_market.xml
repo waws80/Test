@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_market"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:layout_height="match_parent"
+    tools:context="com.qigeairen.user.ui.activity.MarketActivity"
+    >
+
+    <RelativeLayout
+        style="@style/CustomToolBarTheme"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="30.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="44dp"
+            android:background="@mipmap/market_back"
+            android:layout_height="31.8dp"
+            android:id="@+id/market_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/market_back"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="14.49dp"
+        android:layout_marginRight="14.49dp"
+        android:layout_height="30.79dp"
+        android:background="@drawable/maket_search_bg"
+        android:layout_marginTop="7.9dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:id="@+id/seach_good"
+            android:layout_width="12.3dp"
+            android:layout_height="12.3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/market_seach"
+
+            />
+        <EditText
+            android:id="@+id/seach_text"
+            android:hint="搜索您要找的商品"
+            android:background="@null"
+            android:textSize="10.8sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <com.qigeairen.user.utils.customview.FlyBanner
+        android:layout_width="match_parent"
+        android:layout_height="195.65dp"
+        android:layout_marginTop="7.9dp"
+        android:background="@mipmap/market_ad"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myrecycler"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31.88dp"
+        android:gravity="center"
+        >
+        <View
+            android:layout_width="75dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="0.1dp"/>
+
+
+        <ImageView
+            android:layout_width="11.95dp"
+            android:layout_height="11.95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/recommend_sign"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/market_recommend"
+
+            />
+        <View
+            android:layout_width="75dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="0.1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\QGAR\7gar.cn\Android\qigeairen\PayUtils\src\main\assets"/><source path="F:\QGAR\7gar.cn\Android\qigeairen\PayUtils\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="F:\QGAR\7gar.cn\Android\qigeairen\PayUtils\src\release\assets"/></dataSet></merger>

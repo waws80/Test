@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "F:\\QGAR\\7gar.cn\\Android\\qigeairen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 16,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "F:\\QGAR\\7gar.cn\\Android\\qigeairen\\app\\src\\main\\res\\values-v19\\styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 8,
+                        "startOffset": 63,
+                        "endLine": 7,
+                        "endColumn": 16,
+                        "endOffset": 382
+                    }
+                }
+            }
+        ]
+    }
+]
